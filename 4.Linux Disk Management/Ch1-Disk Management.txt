@@ -1,0 +1,12 @@
+Disk Management:
+Partitions
+MBR -- Master Boot Record
+GPT -- GUID partition Table
+UEFI -- Unified Extensible Firmware Interface(replacing BIOS)
+
+GPT-upto 128partition|9.4ZB disk sizes
+Mount Points:
+dir used to access data on a partition
+/ is always mount point
+
+fdisk /path/to/device	--	alternatives gdisk.parted

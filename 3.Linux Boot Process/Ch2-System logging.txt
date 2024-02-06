@@ -1,0 +1,26 @@
+System Logging:
+$IncludeConfig /etc/rsyslog.d/*.conf
+
+syslog standard:
+Aids in the processing of messages
+Allows logging to be centrally controlled
+Uses facilities and severities to categorize messages
+
+Logging Rules:
+Selector field
+Action field
+mail.*		--	/var/log/mail.log
+
+Caching vs Non-caching
+Caching:used if the path starts with -hyphen
+mail.info		--	-/var/log/mail.info
+
+logger [options] message
+-p	--	FACILITY.SEVERITY
+-t	--	TAG
+
+/etc/logrotate.conf:
+Test the logrotate configuration:
+# logrotate -fv /etc/logrotate.conf
+-f:force rotation
+-v:verbose logging

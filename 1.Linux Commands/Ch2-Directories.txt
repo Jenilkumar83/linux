@@ -1,0 +1,34 @@
+Directories:
+. -- this dir
+.. -- parent dir
+cd - -- change to pre dir
+/ -- dir separator
+
+mkdir [-p] dir -- Create a directory
+rmdir [-p] dir -- Remove a directory
+rm -rf dir -- Recursively removes directory
+
+
+Hidden files = dot files -- this files are not displayed by default
+To show hidden files with ls => ls -l -a | ls -la | ls -al
+
+ls -F -- to reveal file types
+/ Directory
+@ Link
+* Executable
+
+ls -t -- list files by time
+ls -r -- Reverse order
+ls -d -- only names, not contents
+ls -R -- Lists file recursively
+ls -latr 
+ls --color
+
+Similar like ls -R, but creates visual output.
+tree -d -- List directories only
+tree -c -- Colorize output
+
+Spaces in File Names:
+Use quotes for name
+\ to escape spaces
+Hyphens or Underscores or Camelcase

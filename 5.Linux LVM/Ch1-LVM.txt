@@ -1,0 +1,21 @@
+Logical Volume Manager:
+Flexible Capacity
+Disk Striping
+Data Redundancy/Data Mirroring
+
+Layers of abstraction:
+Storage Devices
+Physical Volumes(PV)
+Volume Group(VG)
+Logical Volumes(LV)
+
+lvmdiskscan
+
+Creating LVs:
+pvcreate /dev/sdb
+pvs
+vgcreate vg_app /dev/sdb
+vgs
+lvcreate -L 20G -n lv_data vg_app
+lvs | lvdisplay
+mkfs -t ext4 /dev/vg_name/lv_name

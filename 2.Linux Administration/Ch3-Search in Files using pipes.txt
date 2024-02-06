@@ -1,0 +1,28 @@
+grep	--	display lines matching a pattern
+-i	--	ignore case
+-c	--	count
+-n	--	number at line
+-v	--	invert match
+
+
+file commnad
+
+Pipes:
+cat file  | grep pattern
+
+cut [file]
+-d delimmiter
+-f N	--	Display the Nth field
+
+Copying files:
+SCP	--	Secure copy
+SFTP	--	SSH file transfer protocol
+
+scp source destination
+sftp host
+ftp host -- not secure
+graphical clients:Cyberduck, Filezilla
+
+
+
+

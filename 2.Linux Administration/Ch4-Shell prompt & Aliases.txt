@@ -1,0 +1,19 @@
+Customizing the shell prompt:
+\d
+\h
+\H
+\n
+\t
+\T	--	this all commonly use for bash
+\@
+\A
+\u
+\w
+\W
+\$
+
+Aliases:
+alias [name[=value]] -- for creating alias
+alias cls='clear
+unalias name
+unalias -a -- all remove

@@ -1,0 +1,25 @@
+$ pwd -- present working directory   ->here case matters in the command line
+$ cd /etc -- change the directory
+$ ls -- list directory contents
+$ ls -l
+$ ls -l shells
+$ cat shells -- to see the concatenates of a file
+$ man ls -- for info about ls command/display online manual
+$ clear
+$ exit
+
+
+echo $PATH -- controls your search path
+which -- full path to commands
+which cat
+which tac -- display file in reverse order
+ls --help -- ask for help
+gzip -h
+
+Man is use to display documentation:
+man -k calendar -- search man pages by using man -k.
+
+
+
+
+

@@ -1,0 +1,27 @@
+Wildcards:
+A char or string used for pattern matching
+ls
+re
+cp
+
+*-matches zero or more characters
+?-matches exactly one character
+
+[]-A char class
+ca[nt]* -- can cat candy catch
+
+[!] -- matches any of char NOT included bet the brackets
+[!aeiou]* -- baseball
+
+[a-g]* -- abcdefg
+[[:alpha:]]
+[[:alnum:]]
+[[:digit:]]
+[[:space:]]
+[[:upper:]]
+
+Matching wildcsrd patterns:
+\ -escape char.
+Ex: *\? -- match all files that ends with a que mark
+
+

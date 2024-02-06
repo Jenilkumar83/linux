@@ -1,0 +1,59 @@
+Symbol       	Type
+-		Regular file
+d		Directory
+|		Symbolic link
+r		Read
+w		Write
+x		Execute
+		
+		Category
+u		User
+g		Group
+o		Other
+a		All
+
+groups | id -Gn -- displays a user's groups
+
+Changing Permissions:
+chmod	--	change mode command
+ugoa	--	User category user, group, other, all
++-=	--	Add, Subtract or set permissions
+rwx	--	Read, Write, Execute
+
+r w x
+0 0 0 Value for off
+1 1 1 Binary value for on
+4 2 1 Base 10value for on
+
+umask [-S] [mode] -- sets file creation mask to mode, if given
+-S -- for symbolic notation
+
+
+find options:
+-name pattern
+-iname like -name , but ignore case
+-mtime days
+-size num
+-newer file
+-exec command {} \;
+
+$find
+$find . -- find in current working directory
+
+$find /usr -mtime +10 -mtime -90
+$find .exec file {} \;
+
+Fast find-locate == results are not in real time
+locate uptime
+uptime
+
+
+cat file -- display content
+more file -- browse through text file
+less file -- more features than more
+head file -- output of beginning portion of file
+tail file -- 		ending
+
+Head&Tail:displays only 10 lines, change this behaviour with -n
+
+tail -f file follow the file name -- viewing files in real time

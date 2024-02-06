@@ -1,0 +1,52 @@
+Managing Users & Groups:
+/etc/passwd	--	it's root account
+
+username:password:UID:GID:comments:home_dir:shell
+root:x:0:0:root:/root:/bin/bash
+
+Passwords are stored in /etc/shadow -- only root can access
+
+The root account is always UID 0.
+UIDs<1000	-	configured in /etc/login.defs
+
+Users can switch groups by sing the newgrp command
+Comment field - GECOS field
+To prevent interactive use of an account, use /usr/sbin/nologin or /bin/false as the shell
+
+useradd[options]username
+-c"COMMENT"
+-m	--	Create home dir
+-s/shell/path
+
+Creating pswd using passwd:
+#passwd username
+-gGROUP		--	Specify the default group
+-GGROUP1,GROUPN	--	Additional groups
+
+/etc/skel
+-when using -m the home dir for the account is created
+-the contents of /etc/skel are cpied into the home dir
+-/etc/skel typically contains shell configuration files(.profile, .bashrc, etc)
+
+-r	--	Create a system account
+-d /home/dir	--	Specify the home dir
+-u	--	to specify the UID
+
+userdel[-r]username
+
+usermod [options] username
+-c, -g, -G, -s
+
+/etc/group
+group_name:password:GID:account1,accountN
+
+groups[username]
+#groups root
+root
+
+groupadd[options]group_name
+groupdel group_name
+groupmod[options]group_name
+-gGID	--	change group ID to GID
+-nGROUP	--	Rename the group to GROUP
+The sudo command allows users to run processes as other users, most typically the root user.

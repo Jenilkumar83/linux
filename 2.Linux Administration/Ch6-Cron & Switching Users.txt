@@ -1,0 +1,52 @@
+Cron: A time based job sche srvice
+#Run every Monday at 7:00
+07**1 /opt/sales/bin/weekly-report
+0 -- minute(0-59)
+7 -- Hour(1-12)
+* -- Day of the month(1-31)
+* -- MOnth of the year(0-23)
+1 -- Day of the week(0-59)
+
+
+crontab file -- install new
+crontab -l  -- list
+crontab -e -- edit
+crontab -r -- remove
+
+Switching Users:
+su [username]	--	change user ID or become superuser
+whoami
+
+Sudo - Super User Do
+sudo -l
+sudo command
+sudo -u root command
+sudo -u user command
+sudo su		--	Switch to superuser
+sudo su -	--	switch to superuser with root's env
+sudo su - username	--	switch to username
+
+sudo -s		--	start shell as root
+sudo -u root -s --	same as sudo -s
+sudo -u user -s	--	Strat a shell as user
+
+visudo		--	edit the /etc/sudoers file
+user host=(users)[NOPASSWD:]commands
+adminuser ALL=(ALL)NOPASSWD:ALL
+
+Shell History:
+history
+HISTSIZE 	--	control num of commands to retain in history
+export HISTSIZE=1000
+
+!Syntax
+!N	--	repeat cmd line num N(bang3 that means !3)
+!!	--	repeat previous cmd line
+!string
+!:N	--	<Event><Separator><Word>
+!^ = !:1
+!$	--	last argument
+ctrl-r	--	Reverse shell history search
+ctrl-g 	--	cancel the search
+
+Tab autocompletion

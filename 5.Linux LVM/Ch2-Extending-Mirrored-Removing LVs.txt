@@ -1,0 +1,16 @@
+Extending LVs:
+#df -h /data
+lvextend -L +5G -r /dev/vg_app/lv_data
+pvcreate /dev/sdc
+vgextend vg_name /dev/sdc
+
+Mirrored LVs:
+lvcreate -m 1 -L 100G -n lv_name vg_name
+
+Removing LVs:
+lvremove /dev/vg_safe/lv_secrets
+vgreduce vg_name /dev/sdc
+vgremove vg_name
+pvremove /dev/sdb
+
+pvmove /dev/sdb /dev/sde

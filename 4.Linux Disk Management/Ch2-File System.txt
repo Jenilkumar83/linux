@@ -1,0 +1,37 @@
+File Systems:
+ext	--	Extended file system
+
+To create:
+mkfs -t TYPE DEVICE
+mkfs -t ext3 /dev/sdb2
+# ls -l /sbin/mkfs*
+
+A mount point is simply a directory that is used to access data on a partition.
+mount DEVICEMOUNT_POINT
+mount /dev/sdb3 /opt
+
+#df -h	--	disk fee command
+
+umount /opt
+umount /dev/sdb3
+
+#mkswap /dev/sdb1
+#swapon -s	--	to see
+
+/etc/fstab	-	The file system Table
+controls what devices get mounted and where on boot
+each entry is made up of 6 fields:
+device
+mount point
+file system type
+mount options
+dump
+fsck order
+
+The /etc/filetab file controls where devices are mounted on a Linux system and what options to use when mounting those devices.--False
+
+Viewing Labels and UUIDs
+# lsblk -f
+# blkid
+
+What command prepares a swap partition for use. Afterwards, you can enable the swap partition with the swapon command.

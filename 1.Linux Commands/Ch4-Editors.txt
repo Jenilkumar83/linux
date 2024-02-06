@@ -1,0 +1,86 @@
+Nano Editor:
+Nano is a simple Editor, not as advances as vi or emacs, if nano not available then look for pico
+
+Vi Editor: Not intuitive, require time investment
+vi [file]
+vim [file]
+view [file] -- starts vim in read-only mode
+
+One of three modes:Command, Insert and Line
+
+Vi Command Mode and Navigation:
+k up
+j down
+h left
+l right
+w right one word
+b left one word
+^ Go to beginning of the line
+$ Go to end of the line
+i insert at cursor position
+I at beginning of th eline
+a append after cursor position
+A append end of line
+:w
+:w!
+:q
+:q! -- without saving changes
+:wq! | :x -- write and quit
+
+x -- dlt a character
+dw -- dlt a word
+dd -- dlt a line
+D -- dlt from current position
+
+yy -- Yank(copy) the current line
+p -- paste the most recent deleted or yanked text
+u -- undo
+ctrl-R -- Redo
+set nu -- set number
+
+Emacs editor:
+emacs [file] -- edit file
+C-h -- Help
+C-x C-c -- Exit
+C-x C-s -- Save the file
+C-h t -- Built-in tutorial
+C-h k <key> -- Describe key
+
+emacs: has a graphical mode too
+gedit: default text editor gor Gnome
+gvim: graphical version of vim
+kedit: default text editor for the KDE
+
+AbiWord: Microsoft Word Alternative
+LibreOffice: Full office suit
+Kate: Source code editor
+
+rm file
+rm -r dir
+rm -f file
+cp sourcefile destinationfile
+cp -i -- run in interactive mode
+mv
+mv source detination
+mv -i source destination
+sort file
+-k F -- sort by key.F is the field number
+-r -- sort in reverse order
+-u -- sort unique
+
+Creating a collection of files:
+tar [-] c|x|t f tarfile [pattern]
+c -- create
+x -- extract
+t -- display table of content
+v -- Be verbose
+z -- Use compression
+f file -- Use this file
+
+gzip -- compress
+gunzip -- uncompress
+gzcat | zcat -- concatenates compressed files
+
+du -- estimates file usage
+du -k -- display sizes in Kilobytes
+du -h -- display sizes in human readable format

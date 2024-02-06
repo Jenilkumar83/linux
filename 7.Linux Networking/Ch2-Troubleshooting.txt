@@ -1,0 +1,26 @@
+Network Troubleshooting:
+ping host
+ping -c COUNT HOST
+Ex:ping -c 3 google.com
+
+traceroute -n google.com
+The netstat Command:
+-n -- display numerical addresses and ports
+-i -- dsp list of network interfaces
+-r -- dsp route table(netstat -rn)
+-p -- dsp PID and program used
+-l -- dsp listing sockets(netstat -nlp)
+-t -- Limit the output to TCP(netstat -ntlp)
+-u -- Limit the output to UDP(netstat -nulp)
+
+Packet sniffing with tcpdump
+tcpdump
+-n, -A, -v, -vvv
+
+telnet HOST_OR_IP PORT_NUMBER
+$ telnet google.com 80
+
+Entries added to the /etc/hosts file become automatically available in DNS. - False
+What range of ports are considered unprivileged ports?
+1024-65535
+

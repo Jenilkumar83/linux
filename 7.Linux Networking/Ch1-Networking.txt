@@ -1,0 +1,86 @@
+Networking:
+IP Networking:Ip address,subnet mask,broadcast address
+IP Address:Network Address,Host Address
+A	--	1 to 128	--	255.0.0.0
+B	--	128 to 192	--	255.255.0.0
+C	--	192 to 234	--	255.255.255.0
+
+Classless Inter-Domain Routing/CIDR
+IP:121.67.198.94
+A network:121.0.0.0
+A subnet:255.0.0.0
+A broadcast:121.255.255.255
+IP:121.67.198.94 Subnet:255.255.255.0
+CIDR network:121.67.198.0
+CIDR subnet:255.255.255.0
+CIDR broadcast:121.67.198.255
+
+Reserved Private address space
+
+ip address | ip addr | ip a | ip address show | ip a s
+ifconfig	--	eth0 and loopback
+
+FQDN=fully qualified domain name
+TLD=Top level domain(.com,.net,.org,etc.)
+$hostname
+$uname -n
+$hostname -f
+
+Resolving DNS Names:
+host
+dig
+/etc/hosts :local to your linux system.It doesn't propagate to the rest of the network.
+
+/etc/nsswitch.conf:
+NSS = Name Service Switch
+controls the search order for resolutions
+hosts: files dns
+
+Ports 1-1023 are well-known ports
+22-SSH
+25-SMTP
+80-HTTP
+143-IMAP
+389-LDAP
+443-HTTPS
+
+/etc/services	--     Maps port names to port numbers
+DHCP-Dynamic Host Configuration Protocol:-to assign IP address to DHCP clients:
+Ip Address
+netmask
+gateway
+DNS servers
+-Each Ip is "leased" from the pool of IP addresses the DHCP server manages
+
+Configuring a DHCP Client-RHEL
+ifconfig -a or ip link
+
+Configuring a DHCP Client-Ubuntu
+/etc/network/interfaces
+auto eth0
+iface eth0 inet dhcp
+
+Assigning a Static IP Address-RHEL
+/etc/sysconfig/network-scripts/ifcfg-eth0
+
+Configuring a DHCP Client-Ubuntu
+/etc/network/interfaces
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+
+Manually Assigning an IP Address:
+ip address add IP[/NETMASK] dev NETWORK_DEVICE
+ifconfig NETWORK_DEVICE addr netmask SUBNET_MASK
+
+ifup/ifdown	--	use instead of ifconfig/ip
+Distribution dependent
+Uses configuration files
+Ex: ifup eth0
+
+GUI/TUI(Textual User Interface) Tools:
+Ubuntu	-	No official tool available
+RedHat	-	nmtui | system-config-network
+SUSE	-	YaST

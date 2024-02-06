@@ -1,0 +1,46 @@
+Package:A collection of files
+Types:
+RPM(red hat package manager) distros - RHEL,CentOS & Oracle Linux
+DEB distros - Debian,Ubuntu,Linux Mint & Kali Linux
+
+RPM:
+yum - RHEL&/CentOS7 & Earlier
+yum search string
+yum info [package]
+yum install [-y] package
+yum remove package
+yum upgrade [package]
+
+dnf - RHEL8/CentOS8 & Later
+
+rpm -qa		--	all installed package
+rpm -qf /path/to/file	--	list the file's package
+rpm -ql package	--	package's files
+rpm -ivh package.rpm	--	instal the package
+rpm -e package		--	uninstall
+
+uname -m 	--	machine's architecture
+curl		--	transfer data over network such as a downloading a file
+
+
+DEB:
+APT-Advanced Packaging Tool
+apt-cache
+apt-get
+apt-cache search string
+apt-get install [-y] package
+apt-get remove package	--  leaving configuration
+apt-get purge package	--  deleting configuration
+apt-cache show package
+apt-get update
+apt-get upgrade [-y]
+
+dpkg -- to install package
+dpkg -l
+dpkg -s /path/to/file
+dpkg -L package
+dpkg -i package.deb
+dpkg -r package
+
+apt autoremove
+dnf autoremove

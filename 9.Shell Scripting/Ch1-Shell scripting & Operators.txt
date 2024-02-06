@@ -1,0 +1,36 @@
+Shell Scripting:
+Scripts:Contain a series of commands
+script.sh
+sleepy.sh
+Shebang or Not to shebang
+VARIABLE_NAME="Value"	--	dollar sign use
+
+File operators(tests):
+-d, -e, -f, -r, -s, -w, -x
+String operators(tests):
+-zSTRING
+-nSTRING
+STRING1=STRING2
+STRING1!=STRING2
+Arithmetic operators(tests):
+arg1 -eq arg2
+arg1 -ne arg2
+
+arg1 -lt arg2
+arg1 -le arg2
+
+arg1 -gt arg2
+arg1 -ge arg2
+
+if[condition-is-true]   
+then
+	command 1
+	command 2
+	command N
+fi
+
+if/elif/else
+for loop
+Positional Parameters
+Accepting User Input(STDIN)
+The first line of a shell script typically starts with a shebang followed by the path to an interpreter that will be used to execute the commands in the script.

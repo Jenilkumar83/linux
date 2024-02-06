@@ -1,0 +1,31 @@
+Linux Boost Process:
+BIOS-Basic Input/Output System
+Performs the POST - Power-On Self Test
+
+LILO-Linux Loader
+GRUB-Grand Unified BootLoader-replaced LILO
+BootLoader start the OS
+initrd-initial RAM disk
+
+/boot:
+contains files required to boot linux
+initrd
+kernel
+boot loader configuration
+
+dmesg	/var/log/dmesg	-- contains msg from the lin kernel
+systemd		--	uses targets instead of runlevels
+dmesg::displays the contents of kernel ring buffer
+
+Changing runlevels or targets:
+telinit RUNLEVEL
+systemctl isolate TARGET
+
+Rebooting:
+shutdown [options] time [message]
+shutdown -r now
+
+Poweroff:
+telinit 0
+systemctl isolate poweroff.target
+poweroff

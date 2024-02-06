@@ -1,0 +1,24 @@
+I/O:-	File Descriptor
+stdin	0
+stdout	1
+stderr	2
+>	--	redirects output from command to file
+>>
+<	--	redirects output from file to command
+
+&	--	Used with redirection to signal that file descriptor being used
+2>file	--	Redirect std err to a file 
+2>&1	--	combine stderr and stdout
+
+Comparing files:
+diff	
+sdiff	--	side by side
+vimdiff	--	highlight diff in vim
+3c3	--	lineNumFile1-Action-lineNumFile1
+ACtion	--	(A)dd(C)hange(D)elete
+|	--	differing lines in sdiff
+
+ctrl-w w
+:q
+:qa
+:qa!	

@@ -1,0 +1,34 @@
+viewing environment variables:
+$ printenv HOME	--	case sensitive
+$ echo $HOME	--	env var are case sensitive
+creating env var:
+export TZ="US/Pacific"
+removing env var:
+unset TZ
+
+Processes and Job Control:
+ps	--	display process status
+-e
+-f	--	full format listing
+-u username
+-p pid	--	info of PID
+ps -e
+ps -ef
+ps -eH
+ps -e --forest
+ps -u username
+pstree
+top | htop
+
+command &	--	Start command in background
+ctrl-c		--	Kill the foreground process
+ctrl-z		--	Suspended the foreground process
+bg [%num]	--	bckg a suspended process
+fg [%num]	--	foreg a backg pro
+kill
+jobs [%num]	--	list jobs
+
+kill [-sig] pid
+kill -l
+kill 123
+kill -15 123
